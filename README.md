@@ -23,7 +23,7 @@
     > Memory performance is measured by exeucting the "copy integer" operation and the result is measured in MB/s (Megabytes per Second), which represents the rate at which data can be transferred to and from memory. The higher, the better.
 
 2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
-    > Yes, the performance of EC2 instances increases with more vCPUs and memory.  
+    > **Yes, the performance of EC2 instances increases with more vCPUs and memory**.  
     > t2.micro has 1vCPU and 1GiB memory, t2.medium and c5d.large, both have 2vCPU and 4GiB memory. As shown in the table, the results of t2.medium and c5d.large are close and both show better CPU and memory performance than t2.micro.
     In order to answer this question, you need to complete the following table by filling out blanks with the measurement results corresponding to each instance type.
 
@@ -38,7 +38,7 @@
 ## Question 2: Measure the EC2 Network performance
 
 1. (1 mark) The metrics of network performance include **TCP bandwidth** and **round-trip time (RTT)**. Within the same region, what network performance is experienced between instances of the same type and different types? In order to answer this question, you need to complete the following table.
-    > Overall, within the same region, instances of the same type generally experience higher TCP bandwidth and lower RTT compared to instances of different types.  
+    > Overall, within the same region, **instances of the same type generally experience higher TCP bandwidth and lower RTT compared to instances of different types.**  
     > For example, m5.large - m5.large shows the performance with 4950 Mbps and 0.181 ms RTT, while m5.large - t3.medium has the lowest performance with 1740 Mbps and 0.875 ms RTT. Thus, network performance is better between instances of the same type.
 
     | Type                      | TCP b/w (Mbps) | RTT (ms) |
@@ -53,7 +53,7 @@
     > Region: US East (N. Virginia). Use `Ubuntu Server 22.04 LTS (HVM)` as AMI. Note: Use private IP address when using iPerf within the same region. You'll need iPerf for measuring TCP bandwidth and Ping for measuring Round-Trip time.
 
 3. (1 mark) What about the network performance for instances deployed in different regions? In order to answer this question, you need to complete the following table.
-   > As shown in the table below, instances deployed in the same region experience much better network performance compared to those in different regions.
+   > As shown in the table below, **instances deployed in the same region experience much better network performance compared to those in different regions.**
 
     | Connection                | TCP b/w (Mbps) | RTT (ms) |
     | ------------------------- | -------------- | -------- |
