@@ -15,7 +15,9 @@
 
 1. (1 mark) Report the name of measurement tool used in your measurements (you are free to choose *any* open source measurement software as long as it can measure CPU and memory performance). Please describe your configuration of the measurement tool, and explain why you set such a value for each parameter. Explain what the values obtained from measurement results represent (e.g., the value of your measurement result can be the execution time for a scientific computing task, a score given by the measurement tools or something else).
 
-    > The measurement tool used in this assignment is Phoronix Test Suite with its default configuration. 
+    > The measurement tool used in this assignment is Phoronix Test Suite with its default configuration.
+    > CPU performance is measured by exeucting 7-zip compression and the result is measured in MIPS (Million Instructions Per Second), which represents the speed at which CPU operates instructions. The higher, the better.
+    > Memory performance is measured by exeucting the "copy integer" operation and the result is measured in MB/s (Megabytes per Second), which represents the rate at which data can be transferred to and from memory. The higher, the better.
 
 2. (1 mark) Run your measurement tool on general purpose `t2.micro`, `t2.medium`, and `c5d.large` Linux instances, respectively, and find the performance differences among these instances. Launch all the instances in the **US East (N. Virginia)** region. Does the performance of EC2 instances increase commensurate with the increase of the number of vCPUs and memory resource?
 
